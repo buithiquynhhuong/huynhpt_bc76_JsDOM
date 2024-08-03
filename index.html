@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="./../bootstrap_5.3/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container-fluid alert alert-info">
+    <h1 class="text-center">EXERCISE JS DOM</h1>
+</div>
+<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="ex1-tab" data-bs-toggle="pill" data-bs-target="#ex1"
+                type="button" role="tab"
+                aria-controls="v-pills-home" aria-selected="true">Exercise 1
+        </button>
+        <button class="nav-link" id="ex2-tab" data-bs-toggle="pill" data-bs-target="#ex2"
+                type="button" role="tab"
+                aria-controls="v-pills-profile" aria-selected="false">Exercise 2
+        </button>
+        <button class="nav-link" id="ex3-tab" data-bs-toggle="pill" data-bs-target="#ex3"
+                type="button" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">Exercise 3
+        </button>
+        <button class="nav-link" id="ex4-tab" data-bs-toggle="pill" data-bs-target="#ex4"
+                type="button" role="tab"
+                aria-controls="v-pills-settings" aria-selected="false">Exercise 4
+        </button>
+        <button class="nav-link" id="ex5-tab" data-bs-toggle="pill" data-bs-target="#ex5"
+                type="button" role="tab"
+                aria-controls="v-pills-settings" aria-selected="false">Exercise 5
+        </button>
+    </div>
+
+    <div class=" border-start" style="width: 90%">
+        <div class="tab-content m-auto" id="v-pills-tabContent">
+            <!--    bài 1-->
+            <div class="tab-pane fade show active " id="ex1" role="tabpanel"
+                 aria-labelledby="v-pills-home-tab">
+
+                <div class="container w-25">
+                    <div class="mb-3 mt-3 ">
+                        <h2 class="text-center">Calculate employer salary</h2>
+                        <label for class="form-label">
+                            Working days:
+                        </label>
+                        <input type="number" class="form-control" name id="workingDays" aria-describedby="helpId"
+                               placeholder="Please enter the number of working days"/>
+                    </div>
+                    <button type="button" class="btn btn-success d-block" id="calSalary">
+                        Calculate salary
+                    </button>
+                    <h4 class="text-center">Result</h4>
+                    <div id="result1" class="alert alert-success w-100 mt-3 text-center"></div>
+                </div>
+
+            </div>
+            <!--  bài 2-->
+            <div class="tab-pane fade" id="ex2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+
+                <div class="container w-50">
+                    <div class="mb-3 mt-3 ">
+                        <div class="row g-3">
+                            <h2 class="text-center">Calculate Average</h2>
+                            <div class="col-4">
+
+                                <label for class="form-label">
+                                    Number 1:
+                                </label>
+                                <input type="number" class="form-control" name id="num1" aria-describedby="helpId"
+                                       placeholder="Please enter number 1 "/>
+
+                            </div>
+                            <div class="col-4">
+                                <label for class="form-label">
+                                    Number 2:
+                                </label>
+                                <input type="number" class="form-control" name id="num2" aria-describedby="helpId"
+                                       placeholder="Please enter number 2 "/>
+
+                            </div>
+                            <div class="col-4">
+                                <label for class="form-label">
+                                    Number 3:
+                                </label>
+                                <input type="number" class="form-control" name id="num3" aria-describedby="helpId"
+                                       placeholder="Please enter number 3 "/>
+                            </div>
+                            <div class="col-4">
+                                <label for class="form-label">
+                                    Number 4:
+                                </label>
+                                <input type="number" class="form-control" name id="num4" aria-describedby="helpId"
+                                       placeholder="Please enter number 4 "/>
+                            </div>
+                            <div class="col-4">
+                                <label for class="form-label">
+                                    Number 5:
+                                </label>
+                                <input type="number" class="form-control" name id="num5" aria-describedby="helpId"
+                                       placeholder="Please enter number 5 "/>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-success d-block" id="calAverage">
+                        Calculate average
+                    </button>
+                    <h4 class="text-center">Result</h4>
+                    <div id="result2" class="alert alert-success w-100 mt-3 text-center"></div>
+                </div>
+
+
+            </div>
+            <!--    bài 3-->
+            <div class="tab-pane fade" id="ex3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                <div class="container w-25">
+                    <div class="mb-3 mt-3 ">
+                        <h2 class="text-center">Exchange money</h2>
+                        <label for class="form-label">
+                            Amount:
+                        </label>
+                        <input type="number" class="form-control" name id="money" aria-describedby="helpId"
+                               placeholder="Please enter the amount of money"/>
+                    </div>
+                    <button type="button" class="btn btn-success d-block" id="exchangeMoney">
+                        Exchange money
+                    </button>
+                    <h4 class="text-center">Result</h4>
+                    <div id="result3" class="alert alert-success w-100 mt-3 text-center"></div>
+                </div>
+
+            </div>
+            <!--   bài 4-->
+            <div class="tab-pane fade" id="ex4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                <div class="container w-50">
+                    <div class="mb-3 mt-3 ">
+                        <h2 class="text-center">Calculate the area and perimeter of a rectangle. </h2>
+                        <label for class="form-label">
+                            Width:
+                        </label>
+                        <input type="number" class="form-control" name id="width" aria-describedby="helpId"
+                               placeholder="Please enter width of rectangle"/>
+
+                        <label for class="form-label">
+                            Length:
+                        </label>
+                        <input type="number" class="form-control" name id="length" aria-describedby="helpId"
+                               placeholder="Please enter length of rectangle"/>
+                    </div>
+                    <button type="button" class="btn btn-success d-block" id="calRectangle">
+                        Calculate rectangle
+                    </button>
+                    <h4 class="text-center">Result</h4>
+                    <div id="result4" class="alert alert-success w-100 mt-3 text-center"></div>
+                </div>
+
+            </div>
+            <!--   bài 5-->
+            <div class="tab-pane fade" id="ex5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="container w-25">
+                    <div class="mb-3 mt-3 ">
+                        <h2 class="text-center">Calculate number</h2>
+                        <label for class="form-label">
+                            Number
+                        </label>
+                        <input type="number" class="form-control" name id="numSum" aria-describedby="helpId"
+                               placeholder="Please enter the number"/>
+                    </div>
+                    <button type="button" class="btn btn-success d-block" id="calSum">
+                        Calculate
+                    </button>
+                    <h4 class="text-center">Result</h4>
+                    <div id="result5" class="alert alert-success w-100 mt-3 text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+<script src="./../bootstrap_5.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
